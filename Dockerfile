@@ -5,3 +5,5 @@ RUN chmod +x /opt/stackage/lts-2/extra/bin/stack
 
 ADD stack.yaml /prefetch/stack.yaml
 RUN cd /prefetch && stack setup
+
+ENV PATH /root/.local/bin:$PATH
